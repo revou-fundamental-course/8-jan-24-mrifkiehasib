@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik Kalkulator Matematik</title>
+</head>
+<body>
+    <header>
+        <h1>Katik Kalkulator Matematik</h1>
+        <h2>Wecome to kalkulator Luas dan Keliling Persegi</h2>
+    </header>
+    <div class="section">
+        <p>Web App sederhana ini di pakai untuk menghitung luas dan keliling persegi dalam mini project revou</p>
+        <h3>Luas Persegi dan Keliling Persegi</h3>
+        <div class="square">
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Kotak -->
+                <rect width="200" height="200" stroke="red" fill="transparent" stroke-width="2"/>
+                
+                <!-- Tulisan A -->
+                <text x="5" y="15" font-size="14" fill="white" font-weight="bold">A</text>
+                
+                <!-- Tulisan B -->
+                <text x="190" y="15" text-anchor="end" fill="white" font-size="14" font-weight="bold">B</text>
+                
+                <!-- Tulisan C -->
+                <text x="5" y="190" font-size="14" fill="white" font-weight="bold">C</text>
+                
+                <!-- Tulisan D -->
+                <text x="190" y="190" text-anchor="end" fill="white" alignment-baseline="baseline" font-size="14" font-weight="bold">D</text>
+              </svg>
+        </div>
+        <p class="left">Rumus Luas Persegi adalah <strong>L=SxS</strong> </p>
+        <p class="left"> Dimana <strong>L</strong> adalah luas, dan <Strong>S</Strong> adalah Sisi</p>
+        <p class="left">Rumus Keliling Persegi adalah <strong>K=4xS</strong> </p>
+        <p class="left"> Dimana <strong>K</strong> adalah Keliling, dan <Strong>S</Strong> adalah Sisi</p>
+        <div class="inputSection">
+            <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi dan Keliling Persegi</label>
+            <input type="number" placeholder="Nilai Sisi" id="squareSide">
+        </div>
+        <div class="buttons">
+            <button id="countButton" onclick="hitungLuasDanKeliling()">Hitung</button>
+            <button id="resetButton" onclick="location.reload()">Reset</button>
+        </div>
+        <p class="result" id="rumusLuas"></p>
+        <p class="result" id="rumusKeliling"></p>
+        <p class="result" id="isiLuas"></p>
+        <p class="result" id="isiKeliling"></p>
+        <p class="result" id="hasilLuasKeliling"></p>
+    </div>
+</body>
+<script src="script/script.js"></script>
+</html>
